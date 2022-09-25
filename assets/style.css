@@ -38,21 +38,31 @@ header nav ul li {
 }   
 
 .hero {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url('images/Banner\ Canva.png');
-    padding: 50px;
+    padding: 100px;
 }
 
 .hero h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    vertical-align: center;
+    align-content: center;
     background-color: red;
     padding: 5px;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(91, 92, 92);
 }
 
+body h3 {
+    color: blue;
+    border-right: solid 3px red;
+}
