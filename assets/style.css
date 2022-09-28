@@ -45,7 +45,9 @@ header nav ul li {
 }   
 
 .banner {
-    display: block;
+    display:flex;
+    width: 100%;
+
 }
 
 .content {
@@ -57,19 +59,32 @@ header nav ul li {
     color: rgb(58, 129, 129);
 }
 
-.content section article:nth-child(odd) {
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    max-width: 90%;
+    padding-right: 20%;
+}
+
+.aboutMe p {
+    border-left: solid 2px red;
+    margin: 20px;
+}
+
+/* .content section div:nth-child(odd) {
     flex: .3;
     padding-left: 5px;
     width: max-content;
     text-align: right;
 }
 
-.content section article:nth-child(even) {
+.content section div:nth-child(even) {
     border-left: solid red;
     padding-left: 40px;
 }
 
-.content section article{
+.content section div{
     flex: 1;
     padding: 5px;
     margin: 20px;
@@ -77,8 +92,7 @@ header nav ul li {
 
 .content h3 {
     font-size: 30px;
-}
-
+} */
 
 
 /*
