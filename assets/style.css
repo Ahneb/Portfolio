@@ -44,25 +44,9 @@ header nav ul li {
     cursor: pointer;
 }   
 
-.hero {
-    position: relative;
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('images/Banner\ Canva.png');
-    padding: 100px;
+.banner {
+    display: block;
 }
-
-.hero h2 {  
-    position: absolute;
-    bottom: 40px;
-    right: 50px;
-    vertical-align: center;
-    align-content: center;
-    background-color: red;
-    padding: 5px;
-}   
-
 
 .content {
     flex-direction: column;
@@ -73,22 +57,28 @@ header nav ul li {
     color: rgb(58, 129, 129);
 }
 
-.content section div:nth-child(odd) {
+.content section article:nth-child(odd) {
     flex: .3;
     padding-left: 5px;
     width: max-content;
+    text-align: right;
 }
 
-.content section div:nth-child(even) {
+.content section article:nth-child(even) {
     border-left: solid red;
     padding-left: 40px;
 }
 
-.content section div{
+.content section article{
     flex: 1;
     padding: 5px;
     margin: 20px;
 }
+
+.content h3 {
+    font-size: 30px;
+}
+
 
 
 /*
